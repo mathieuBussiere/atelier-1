@@ -1,7 +1,7 @@
 //Mon premier server HTTP.
 //Un autre commentaire
-const queryString = require('query-string');
 const http = require('http');
+const queryString = require('query-string');
 const server = http.createServer((req, res) => {
     console.log(req.url);
 let reqInfo = { url: req.url, method: req.method, contentType: req.headers['content-type'] };
